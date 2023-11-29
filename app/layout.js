@@ -1,6 +1,7 @@
 import { Inter } from 'next/font/google'
 import './globals.css'
 import Navigation from './components/Nav'
+import AuthProvider from './components/AuthPRoviders'
 
 
 
@@ -12,13 +13,16 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-     
+      <AuthProvider>
       <body className='bg-gray-100'>
       <Navigation/>
+      
       <div className='m-2'>
         {children}
       </div>
+      
         </body>
+        </AuthProvider>
     </html>
   )
 }

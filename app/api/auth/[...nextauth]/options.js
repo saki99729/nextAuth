@@ -11,7 +11,7 @@ export const options = {
 
                 let userRole ="Github User"
                 if(profile?.email =="sakilasandanuwan1999@gmail.com"){
-                    userRole ="admin"
+                    //userRole ="admin"
                 }
                 return{
                     ...profile,
